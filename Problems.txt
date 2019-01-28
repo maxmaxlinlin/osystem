@@ -10,7 +10,7 @@
 	syntax error, make sure the variable name match with the declared one.
 
 	
-3. Problem：
+3. Problem：   
 	c:/sysgcc/arm-elf/bin/../lib/gcc/arm-elf/4.6.3/../../../../arm-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 30000000
 	init.o: In function `_main':
 	C:\Users\maxma\AppData\Roaming\SPB_Data\sourcecode_v1/init.s:56: undefined reference to `plat_boot'
