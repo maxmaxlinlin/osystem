@@ -1,0 +1,31 @@
+1. Problem：
+	init.s: Warning: end of file not at end of a line; newline inserted
+	Solution：
+	You just add a newline at the end of your source file and the warning will magically disappear. 
+	
+	
+2. Problem：  
+	start.s:19: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+	Solution：
+	syntax error, make sure the variable name match with the declared one.
+
+	
+3. Problem：   
+	c:/sysgcc/arm-elf/bin/../lib/gcc/arm-elf/4.6.3/../../../../arm-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 30000000
+	init.o: In function `_main':
+	C:\Users\maxma\AppData\Roaming\SPB_Data\sourcecode_v1/init.s:56: undefined reference to `plat_boot'
+	collect2: ld returned 1 exit status
+	Solution：
+	delete the old .o files 
+
+.......
+...............
+4. Problem：				-----	                      
+	c:/sysgcc/arm-elf/bin/../lib/gcc/arm-elf/4.6.3/../../../../arm-e	lf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to ffffffff
+	Solution：
+
+
+5. Problem：
+	SKYEYE:Error in mem_read_word, no bank found, NumInstrs 2099822, mem_read_word addr = 308029d0 no bank
+	Solution：
+	the assigned address is not correct, check the makefile linkfile assigned address "LDFLAGS=-Tleeos.lds -Ttext 30000000"
