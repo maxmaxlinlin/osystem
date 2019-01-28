@@ -18,7 +18,7 @@
 	Solution：
 	delete the old .o files 
 
-
+.......
 
 4. Problem：					                      
 	c:/sysgcc/arm-elf/bin/../lib/gcc/arm-elf/4.6.3/../../../../arm-e	lf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to ffffffff
